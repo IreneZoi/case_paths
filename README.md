@@ -4,7 +4,7 @@ The input/output paths can be found here.
 
 These paths are stored as key-value pairs in the form of Python dictionaries present in the following scripts (only necessary ones to get it all running are mentioned below):
 - `path_constants/sample_dict.py`
-    - reading input files for training/testing: `base_dir_events` 
+    - reading input files for training/testing of VAE: `base_dir_events` 
 - `path_constants/sample_dict_file_parts_input.py`
     - same as above: `base_dir`
 - `path_constants/sample_dict_file_parts_reco.py`
