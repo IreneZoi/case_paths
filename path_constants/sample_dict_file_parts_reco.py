@@ -6,7 +6,8 @@ path_dict = copy.deepcopy(sd.path_dict)
 
 update_dict = {
 	
-        'base_dir' : '/eos/uscms/store/user/izoi/CASE/CASE_Feb2023/$run$',
+        'base_dir' : '/eos/uscms/store/user/izoi/CASE/CASE_Feb2023/run_40000/',
+        #'base_dir' : '/eos/uscms/store/user/izoi/CASE/CASE_Feb2023/$run$',
 
 	'sample_dir' : {
                 'qcdSideReco': 'qcd_sideband',
