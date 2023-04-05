@@ -39,9 +39,9 @@ class JetSample():
         return cls(name, df)
 
     @classmethod
-    def from_input_dir(cls, name, path, read_n=None, **cuts):
+    def from_input_dir(cls, name, path, read_n=None, tag=None, **cuts):
         print(path)
-        df, _ = dr.DataReader(path).read_jet_features_from_dir(read_n=read_n, features_to_df=True, **cuts)
+        df, _ = dr.DataReader(path).read_jet_features_from_dir(read_n=read_n, features_to_df=True, tag=tag, **cuts)
         # convert any QR-selection colums from 0/1 to bool
         sel_cols = [c for c in df if c.startswith('sel')]
         for sel in sel_cols:  # convert selection column to bool
